@@ -10,3 +10,6 @@ Student #s:
 Onyige, Dinim: 300482987
 Olatunji, Teju: 300492319
 Rao, Shrish: 300490955
+Fortin, Jack: 300470274
+Harouach, Mohammed: 300478799
+Angounou Agnima, Yves: 

@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optima HealthTech</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#"><img src="logoSmall.png" alt="Logo" /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#">ABOUT US</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main">
+      <img src="logoBig.png" alt="Optima HealthTech" />
+    </div>
+    <p>Empowering healthcare through intelligent technology</p>
+    <a href="#" class="lmbutton">LEARN MORE</a>
+  </body>
+</html>
 

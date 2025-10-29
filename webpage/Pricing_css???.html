@@ -6,10 +6,20 @@ background:linear-gradient(to right, #0a0a23, #3322cc);
 color:white;
 Text-align: center;
 }
+Button{
+background-Color: green;
+Color: white;
+Height: 40px;
+Width: 150px;
+Border-radius: 10px;
+Visibility: hidden;
+}
+P{visibility: hidden;}
+Ul{visibility: hidden;}
 .box{
 background:linear-gradient(to top, #0a0a23, #3322cc);
 position: absolute;
-height: 400px;
+height: 170px;
 width: 220px;
 z-index: -1;
 margin-left: 800px;
@@ -18,20 +28,10 @@ Cursor:default;
 Border-radius: 5px;
 }
 .box:hover{
-Top:200px;
-
-}
-A:link{
-Color: white;
-}
-a:visited {
-  color: white;
-}
-a:hover {
-  color: white;
-}
-a:active {
-  color: blue;
+Height: 400px;
+Ul{visibility: visible;}
+P{visibility: visible;}
+Button{visibility: visible;}
 }
 
 .circle{
@@ -45,10 +45,10 @@ Font-size: 40px;
 h3{
 Font-size: 30px;
 }
+
 </style>
 <body>
 <h1 style="margin-left: 580px; margin-top: 50px; font-size:100px;">Pricing</h1>
-<a href=/;>
 <div class="box" style="margin-left: 400px;">
 <h2>Standard</h2>
 <h3>300$</h3>
@@ -58,9 +58,8 @@ Font-size: 30px;
   <li>heart rate tracker</li>
   <li>Body heat sensors</li>
 </ul>
+<button class="button">Buy</button>
 </div>
-</a>
-<a href=/;>
 <div class="box">
 <h2>Premium</h2>
 <h3>800$</h3>
@@ -70,8 +69,8 @@ Font-size: 30px;
   <li>better equalization of temperature</li>
   <li>All round sensors</li>
 </ul>
+<button type="button">Buy</button>
 </div>
-</a>
 <div class="circle" style="left:50px; bottom:670px; height: 450px; width: 450px;"></div>
 <div class="circle" style="left:50px; top:300px; height: 80px; width: 80px;"></div>
 <div class="circle" style="left:200px; top:450px; height: 120px; width: 120px;"></div>

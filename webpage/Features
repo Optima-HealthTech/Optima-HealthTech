@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Optima Health Tech </title>
-</head>
-<body>
+  <head>
+    <title>Optima Health Tech</title>
+    <link rel="stylesheet" href="features.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>CoreSense</h1>
+        <h2>The Intelligent Health Vest</h2>
+        <p>Empowering Your Health with Smart Technology</p>
+        <img src="vest.png" alt="CoreSense Vest" class="vest" />
+        <img src="logo2.png" alt="Optima HealthTech Logo" class="logo" />
+      </div>
 
-    <h1>CoreSense</h1>
-    
-    <h2>The Intelligent Health Vest</h2>
-    
-    <p>Empowering Your Health with Smart Technology</p>
-
-    <h3>Features</h3>
-
-    <p><b>Posture Detection:</b> Detects slouching and reminds you to sit or stand upright.</p>
-    
-    <p><b>Heart Rate Monitoring:</b> Tracks your heart rate in real time.</p>
-    
-    <p><b>Body Heat Regulation:</b> Cools or heats based on your body temperature.</p>
-    
-    <p><b>Smart Insights:</b> Shows your posture, heart rate, and temperature in the app.</p>
-    
-    <p><b>Customizable Settings:</b> Lets you change vibration strength and alerts.</p>
-
-    <p><i>CoreSense - Smart. Comfortable. Connected.</i></p>
-
-</body>
+      <div class="right">
+        <h3>Features</h3>
+        <img src="writings.png" alt="CoreSense Features" class="writings" />
+      </div>
+    </div>
+  </body>
 </html>

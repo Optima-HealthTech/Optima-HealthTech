@@ -11,12 +11,8 @@ body {
 }
 
 @keyframes fadeInBody {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .container {
@@ -66,11 +62,18 @@ body {
   }
 }
 
+/* CoreSense title glow pulse */
 .left h1 {
   font-size: 85px;
   font-weight: 900;
   font-family: "Georgia", serif;
   margin-bottom: 10px;
+  animation: glowPulse 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowPulse {
+  from { text-shadow: 0 0 10px rgba(255,255,255,0.3); }
+  to { text-shadow: 0 0 25px rgba(255,255,255,0.6); }
 }
 
 .left h2 {
@@ -86,10 +89,17 @@ body {
   margin-bottom: 35px;
 }
 
+/* Vest with subtle breathing light */
 .vest {
   width: 340px;
   border-radius: 10px;
   transition: transform 0.3s ease;
+  animation: vestGlow 5s ease-in-out infinite alternate;
+}
+
+@keyframes vestGlow {
+  from { filter: brightness(1); }
+  to { filter: brightness(1.2); }
 }
 
 .vest:hover {
@@ -100,7 +110,19 @@ body {
   width: 45%;
   text-align: left;
   margin-top: 0;
-  animation: fadeText 1.5s ease-in-out;
+  animation: fadeRight 1.5s ease-in-out;
+}
+
+/* Fade in “Features” from right side */
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .right h3 {
@@ -108,6 +130,7 @@ body {
   font-weight: 900;
   font-family: "Georgia", serif;
   margin-bottom: 25px;
+  animation: glowPulse 4s ease-in-out infinite alternate;
 }
 
 .writings {
@@ -121,47 +144,24 @@ body {
 .glow3,
 .glow4,
 .circle {
-  animation: float 6s ease-in-out infinite alternate;
+  animation: float 6s ease-in-out infinite alternate, rotateSlow 20s linear infinite;
 }
 
+/* floating + rotating circles */
 @keyframes float {
-  from {
-    transform: translateY(0px);
-    opacity: 0.9;
-  }
-  to {
-    transform: translateY(-20px);
-    opacity: 1;
-  }
+  from { transform: translateY(0px); opacity: 0.9; }
+  to { transform: translateY(-20px); opacity: 1; }
 }
 
-.glow1 {
-  width: 130px;
-  height: 130px;
-  top: -20px;
-  left: 50px;
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
-.glow2 {
-  width: 200px;
-  height: 200px;
-  bottom: -20px;
-  left: 60px;
-}
-
-.glow3 {
-  width: 160px;
-  height: 160px;
-  top: 40px;
-  right: 90px;
-}
-
-.glow4 {
-  width: 250px;
-  height: 250px;
-  bottom: 40px;
-  right: 60px;
-}
+.glow1 { width: 130px; height: 130px; top: -20px; left: 50px; }
+.glow2 { width: 200px; height: 200px; bottom: -20px; left: 60px; }
+.glow3 { width: 160px; height: 160px; top: 40px; right: 90px; }
+.glow4 { width: 250px; height: 250px; bottom: 40px; right: 60px; }
 
 .logo {
   position: fixed;
@@ -183,47 +183,34 @@ body {
   filter: blur(7px);
 }
 
-.circle-small {
-  width: 80px;
-  height: 80px;
+.circle-small { 
+  width: 80px; height: 80px;
+ }
+.circle-medium 
+{ 
+  width: 120px; height: 120px; 
 }
+.circle-large 
+{
+   width: 180px; height: 180px;
+  
+  }
 
-.circle-medium {
-  width: 120px;
-  height: 120px;
+.circle-1 { 
+  top: 3%; left: 8%; 
 }
-
-.circle-large {
-  width: 180px;
-  height: 180px;
+.circle-2 
+{ top: 45%; left: -5%; 
 }
-
-.circle-1 {
-  top: 3%;
-  left: 8%;
-}
-
-.circle-2 {
-  top: 45%;
-  left: -5%;
-}
-
-.circle-3 {
-  bottom: -5%;
-  left: 5%;
-}
-
-.circle-4 {
-  top: 8%;
-  right: 18%;
-}
-
-.circle-5 {
-  top: 55%;
-  right: 8%;
-}
-
-.circle-6 {
-  bottom: -5%;
-  right: -2%;
-}
+.circle-3 
+{ bottom: -5%; left: 5%;
+ }
+.circle-4 
+{ top: 8%; right: 18%;
+ }
+.circle-5 
+{ top: 55%; right: 8%;
+ }
+.circle-6 
+{ bottom: -5%; right: -2%;
+ }

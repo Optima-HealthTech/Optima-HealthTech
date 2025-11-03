@@ -1,36 +1,41 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(90deg, #050515, #1e2bff);
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, #050515 40%, #1e2bff);
   color: white;
-  overflow-x: hidden;
-  min-height: 100vh;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
 
-
+/* overall layout */
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; 
-  padding: 60px;
+  padding: 70px 100px;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
-
+/* Left section */
 .left {
   width: 45%;
 }
 
 .left h1 {
-  font-size: 70px;
-  font-weight: bold;
-  font-family: Georgia, serif;
+  font-size: 85px;
+  font-weight: 900;
+  font-family: "Georgia", serif;
   margin-bottom: 10px;
-  color: white;
 }
 
 .left h2 {
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: 500;
   color: #d0d5ff;
   margin-top: 0;
 }
@@ -38,94 +43,91 @@ body {
 .left p {
   font-size: 18px;
   color: #cfd5ff;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .vest {
-  width: 320px;
+  width: 340px;
   border-radius: 10px;
 }
 
-
+/* Right section */
 .right {
   width: 45%;
+  text-align: left;
 }
 
 .right h3 {
-  font-size: 60px;
-  font-weight: bold;
-  font-family: Georgia, serif;
-  margin-bottom: 20px;
+  font-size: 80px;
+  font-weight: 900;
+  font-family: "Georgia", serif;
+  margin-bottom: 30px;
 }
 
 .writings {
   width: 100%;
-  max-width: 450px;
+  max-width: 470px;
   border-radius: 10px;
 }
 
-
+/* Glowing circles */
 body::before,
-body::after {
+body::after,
+.container::before,
+.container::after {
   content: "";
   position: absolute;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.4) 30%,
+    rgba(255, 255, 255, 0.1) 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
   z-index: 0;
+  filter: blur(1px);
 }
 
-body::before {
-  width: 200px;
-  height: 200px;
-  top: 100px;
-  left: 60%;
+/* bottom left */
+.container::before {
+  width: 180px;
+  height: 180px;
+  left: 0;
+  bottom: 0;
 }
 
+/* top right */
+.container::after {
+  width: 160px;
+  height: 160px;
+  right: 0;
+  top: 0;
+}
+
+/* bottom right */
 body::after {
-  width: 150px;
-  height: 150px;
-  bottom: 50px;
-  right: 50px;
+  width: 250px;
+  height: 250px;
+  right: 0;
+  bottom: 0;
 }
 
+/* small top left circle */
+body::before {
+  width: 120px;
+  height: 120px;
+  top: 0;
+  left: 0;
+}
 
+/* Logo pinned tight to corner */
 .logo {
-  position: absolute;
+  position: fixed;
   top: 10px;
-  left: 10px;
-  width: 100px;
+  left: 15px;
+  width: 120px;
   height: auto;
   filter: brightness(0) invert(1);
-}
-
-
-button, .btn {
-  padding: 12px 25px;
-  border: 2px solid white;
-  background-color: transparent;
-  color: white;
-  font-size: 16px;
-  border-radius: 5px;
-}
-
-button:hover, .btn:hover {
-  background-color: white;
-  color: #050515;
-  cursor: pointer;
-}
-
-
-@media (max-width: 900px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .left, .right {
-    width: 100%;
-  }
-
-  .vest {
-    margin: 20px auto;
-  }
+  z-index: 10;
 }

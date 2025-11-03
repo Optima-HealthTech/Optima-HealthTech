@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(90deg, #000000, #3533cd);
+}
+
+.title-titre {
+  font-family: Cooper Black, Bookman Old Style, Georgia, serif;
+  font-size: 95.6px;
+  margin-left: 100px;
+  color: white;
+}
+
+.first-name {
+  font-family: "Montserrat", "Avenir Next", "Futura", "Century Gothic", sans-serif;
+  font-size: 24px;
+  margin-left: 100px;
+  color: white;
+  margin-right: 250px;
+  border-top: 1px solid white;
+  padding-top: 15px;
+}
+
+.second-name {
+  font-family: "Montserrat", "Avenir Next", "Futura", "Century Gothic", sans-serif;
+  font-size: 24px;
+  color: white;
+  margin-right: 255px;
+  border-top: 1px solid white;
+  padding-top: 15px;
+}
+
+.third-name {
+  font-family: "Montserrat", "Avenir Next", "Futura", "Century Gothic", sans-serif;
+  font-size: 24px;
+  color: white;
+  border-top: 1px solid white;
+  padding-top: 15px;
+}
+
+.fourth-name {
+  font-family: "Montserrat", "Avenir Next", "Futura", "Century Gothic", sans-serif;
+  font-size: 28px;
+  margin-left: 100px;
+  color: white;
+  margin-right: 350px;
+  border-top: 1px solid white;
+  padding-top: 15px;
+  line-height: 20;
+}
+
+.fifth-name {
+  font-family: "Montserrat", "Avenir Next", "Futura", "Century Gothic", sans-serif;
+  font-size: 28px;
+  color: white;
+  margin-right: 384px;
+  border-top: 1px solid white;
+  padding-top: 15px;
+}
+
+.sixth-name {
+  font-family: "Montserrat", "Avenir Next", "Futura", "Century Gothic", sans-serif;
+  font-size: 28px;
+  color: white;
+  border-top: 1px solid white;
+  padding-top: 15px;
+}

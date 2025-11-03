@@ -9,21 +9,24 @@ body {
   position: relative;
 }
 
-/* overall layout */
+/* Main container */
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 70px 100px;
+  padding: 60px 90px;
   height: 100%;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
+  transform: scale(0.85);
+  transform-origin: center;
 }
 
-/* Left section */
+/* Left side */
 .left {
   width: 45%;
+  margin-top: 40px; /* moves CoreSense slightly down */
 }
 
 .left h1 {
@@ -34,7 +37,7 @@ body {
 }
 
 .left h2 {
-  font-size: 26px;
+  font-size: 25px;
   font-weight: 500;
   color: #d0d5ff;
   margin-top: 0;
@@ -43,7 +46,7 @@ body {
 .left p {
   font-size: 18px;
   color: #cfd5ff;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .vest {
@@ -51,83 +54,124 @@ body {
   border-radius: 10px;
 }
 
-/* Right section */
+/* Right side */
 .right {
   width: 45%;
   text-align: left;
+  margin-top: 0;
 }
 
 .right h3 {
   font-size: 80px;
   font-weight: 900;
   font-family: "Georgia", serif;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .writings {
   width: 100%;
-  max-width: 470px;
+  max-width: 430px;
   border-radius: 10px;
 }
 
-/* Glowing circles */
-body::before,
-body::after,
-.container::before,
-.container::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle at center,
-    rgba(255, 255, 255, 0.8) 0%,
-    rgba(255, 255, 255, 0.4) 30%,
-    rgba(255, 255, 255, 0.1) 60%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  z-index: 0;
-  filter: blur(1px);
+/* top left small */
+.glow1 {
+  width: 130px;
+  height: 130px;
+  top: -20px;
+  left: 50px;
 }
 
-/* bottom left */
-.container::before {
-  width: 180px;
-  height: 180px;
-  left: 0;
-  bottom: 0;
+/* bottom left large */
+.glow2 {
+  width: 200px;
+  height: 200px;
+  bottom: -20px;
+  left: 60px;
 }
 
-/* top right */
-.container::after {
+/* top right medium */
+.glow3 {
   width: 160px;
   height: 160px;
-  right: 0;
-  top: 0;
+  top: 40px;
+  right: 90px;
 }
 
-/* bottom right */
-body::after {
+/* bottom right large */
+.glow4 {
   width: 250px;
   height: 250px;
-  right: 0;
-  bottom: 0;
+  bottom: 40px;
+  right: 60px;
 }
 
-/* small top left circle */
-body::before {
-  width: 120px;
-  height: 120px;
-  top: 0;
-  left: 0;
-}
-
-/* Logo pinned tight to corner */
+/* Logo */
 .logo {
   position: fixed;
   top: 10px;
   left: 15px;
-  width: 120px;
+  width: 110px;
   height: auto;
   filter: brightness(0) invert(1);
   z-index: 10;
+}
+
+.circle {
+  background-color: rgba(255, 255, 255, 0.2);
+
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(7px);
+}
+
+.circle-small {
+  width: 80px;
+  height: 80px;
+}
+
+.circle-medium {
+  width: 120px;
+  height: 120px;
+}
+
+.circle-large {
+  width: 180px;
+  height: 180px;
+}
+
+/* top left small - near edge, not over logo */
+.circle-1 {
+  top: 5%;
+  left: -4%;
+}
+
+/* top right small - further right so it doesn’t cover “Features” */
+.circle-2 {
+  top: 8%;
+  right: -4%;
+}
+
+/* bottom left big - behind vest area, slightly off screen */
+.circle-3 {
+  bottom: -10%;
+  left: -3%;
+}
+
+/* bottom right - away from text, balanced with bottom left */
+.circle-4 {
+  bottom: -5%;
+  right: -5%;
+}
+
+/* mid left subtle background accent, faint and off screen */
+.circle-5 {
+  top: 55%;
+  left: -8%;
+}
+
+/* mid right faint accent, lower so it doesn’t hit features text */
+.circle-6 {
+  bottom: 15%;
+  right: -8%;
 }

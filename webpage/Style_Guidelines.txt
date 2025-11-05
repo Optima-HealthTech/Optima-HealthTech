@@ -1,9 +1,9 @@
-Style Guidelines:
+Style Guidelines: optima-Healthtech Web interface
 
-Color Theme: Dark Blue to  Black Gradient, White accents, Silver Gray
+Color Theme: Dark Blue to  Black Gradient, White accents, Silver Gray # palette de couleur principale pour le site.
 
 Typography: Arial (sans-serif) 
 
-Button Style: White, small, rounded.
+Button Style: small, rounded, white buttons.
 
 General style: small white circle around.

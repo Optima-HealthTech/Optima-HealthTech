@@ -1,1 +1,7 @@
+Style Guidelines:
+
+Color Theme: Dark Blue, Black, White, Silver Gray
+
+Typography: Arial (sans-serif)
+
 

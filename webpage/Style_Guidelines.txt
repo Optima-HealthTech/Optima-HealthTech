@@ -4,6 +4,6 @@ Color Theme: Dark Blue to  Black Gradient, White accents, Silver Gray
 
 Typography: Arial (sans-serif) 
 
-
+Button Style: White, small, rounded.
 
 

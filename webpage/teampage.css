@@ -1,65 +1,40 @@
 body {
   background: linear-gradient(90deg, #000000, #3533cd);
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-align: center;
 }
 
 .title-titre {
-  font-family: Cooper Black, Bookman Old Style, Georgia, serif;
-  font-size: 95.6px;
-  margin-left: 100px;
-  color: white;
+  font-family: Cooper black, bookman old style, georgia, serif;
+  font-size: 70px;
+  margin-top: 40px;
 }
 
-.first-name {
-  font-family: "Montserrat", "Avenir Next", "Futura", "Century Gothic", sans-serif;
-  font-size: 24px;
-  margin-left: 100px;
-  color: white;
-  margin-right: 250px;
-  border-top: 1px solid white;
-  padding-top: 15px;
+.team-row {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 60px;
+  flex-wrap: wrap;
 }
 
-.second-name {
-  font-family: "Montserrat", "Avenir Next", "Futura", "Century Gothic", sans-serif;
-  font-size: 24px;
-  color: white;
-  margin-right: 255px;
-  border-top: 1px solid white;
-  padding-top: 15px;
+.member-box {
+  text-align: center;
+  width: 220px;
 }
 
-.third-name {
-  font-family: "Montserrat", "Avenir Next", "Futura", "Century Gothic", sans-serif;
-  font-size: 24px;
-  color: white;
-  border-top: 1px solid white;
-  padding-top: 15px;
+.member-box img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 12px;
 }
 
-.fourth-name {
-  font-family: "Montserrat", "Avenir Next", "Futura", "Century Gothic", sans-serif;
-  font-size: 28px;
-  margin-left: 100px;
-  color: white;
-  margin-right: 350px;
+.member-name {
+  font-size: 20px;
   border-top: 1px solid white;
-  padding-top: 15px;
-  line-height: 20;
-}
-
-.fifth-name {
-  font-family: "Montserrat", "Avenir Next", "Futura", "Century Gothic", sans-serif;
-  font-size: 28px;
-  color: white;
-  margin-right: 384px;
-  border-top: 1px solid white;
-  padding-top: 15px;
-}
-
-.sixth-name {
-  font-family: "Montserrat", "Avenir Next", "Futura", "Century Gothic", sans-serif;
-  font-size: 28px;
-  color: white;
-  border-top: 1px solid white;
-  padding-top: 15px;
+  padding-top: 10px;
 }

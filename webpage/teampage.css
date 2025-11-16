@@ -5,6 +5,48 @@ body {
   text-align: center;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.logo-top-left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: -30px;
+
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar nav ul li {
+  margin-left: 30px;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 3px;
+  transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+  color: rgb(180, 180, 180);
+}
+
 .title-titre {
   font-family: Cooper black, bookman old style, georgia, serif;
   font-size: 70px;
@@ -81,7 +123,91 @@ body {
 }
 
 .contact-button:hover {
-  background: #00ffea;
-  color: #000;
+  background: #000000;
+  color: #ffffff;
   box-shadow: 0 0 12px #00f7ff;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(30px, 20px);
+  }
+  50% {
+    transform: translate(-20px, 40px);
+  }
+  75% {
+    transform: translate(10px, -30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.circle {
+  background-color: rgba(255, 255, 255, 0.2);
+
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(7px);
+}
+
+.circle-small {
+  width: 80px;
+  height: 80px;
+}
+
+.circle-medium {
+  width: 120px;
+  height: 120px;
+}
+
+.circle-large {
+  width: 180px;
+  height: 180px;
+}
+
+.circle-1 {
+  top: 10%;
+  left: 5%;
+
+  animation: drift 5s linear infinite alternate;
+}
+
+.circle-2 {
+  top: 15%;
+  right: 10%;
+
+  animation: drift 13s linear infinite alternate-reverse;
+}
+
+.circle-3 {
+  bottom: 20%;
+  left: 5%;
+
+  animation: drift 11s linear infinite alternate;
+}
+
+.circle-4 {
+  bottom: 5%;
+  right: 25%;
+  padding-bottom: -20px;
+
+  animation: drift 16s linear infinite alternate-reverse;
+}
+
+.circle-5 {
+  top: 60%;
+  left: -10%;
+
+  animation: drift 7s linear infinite alternate;
+}
+
+.circle-6 {
+  top: 80%;
+  right: 5%;
+
+  animation: drift 12s linear infinite alternate-reverse;
 }

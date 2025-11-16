@@ -1,58 +1,78 @@
 body {
-  background: linear-gradient(to right, #0a0a23, #3322cc);
-  color: white;
-  text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, #0a0a1a, #3030ff);
+    height: 100vh;
+    overflow-x: hidden;
+    color: white;
 }
 
-button {
-  background-color: green;
-  color: white;
-  height: 40px;
-  width: 150px;
-  border-radius: 10px;
-  visibility: hidden;
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: 40px;
 }
 
-p {
-  visibility: hidden;
+.circles div {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.c1 { width: 350px; height: 350px; top: -80px; left: -80px; }
+.c2 { width: 110px; height: 110px; top: 260px; left: 50px; }
+.c3 { width: 150px; height: 150px; top: 450px; left: 160px; }
+.c4 { width: 360px; height: 360px; top: 40px; right: -180px; }
+.c5 { width: 160px; height: 160px; bottom: 60px; right: 120px; }
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 60px;
+}
+
+.card {
+    width: 270px;
+    padding: 20px;
+    background: linear-gradient(180deg, #3d3df8, #000);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.price {
+    font-size: 28px;
+    margin: 10px 0 20px 0;
+}
+
+.desc {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 20px;
 }
 
 ul {
-  visibility: hidden;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+/* Hover effect for pricing cards */
+.card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.box {
-  background: linear-gradient(to top, #0a0a23, #3322cc);
-  position: absolute;
-  height: 170px;
-  width: 220px;
-  z-index: -1;
-  margin-left: 800px;
-  margin-top: 100px;
-  cursor: default;
-  border-radius: 5px;
-}
-
-.box:hover {
-  height: 400px;
-}
-
-.box:hover ul,
-.box:hover p,
-.box:hover button {
-  visibility: visible;
-}
-
-.circle {
-  position: fixed;
-  background-color: white;
-  border-radius: 50%;
-}
-
-h2 {
-  font-size: 40px;
-}
-
-h3 {
-  font-size: 30px;
+.card:hover {
+    transform: translateY(-12px) scale(1.04);
+    box-shadow: 0px 0px 35px rgba(255, 255, 255, 0.35);
+    cursor: pointer;
 }

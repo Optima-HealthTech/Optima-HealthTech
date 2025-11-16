@@ -1,42 +1,49 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-  <title>Pricing</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing Page</title>
   <link rel="stylesheet" href="pricing.css">
 </head>
+
 <body>
-  <h1 style="margin-left: 580px; margin-top: 50px; font-size:100px;">Pricing</h1>
 
-  <div class="box" style="margin-left: 400px;">
-    <h2>Standard</h2>
-    <h3>300$</h3>
-    <p>This is the most affordable option while still having the important feature.</p>
-    <ul>
-      <li>heating and cooling</li>
-      <li>heart rate tracker</li>
-      <li>Body heat sensors</li>
-    </ul>
-    <button class="button">Buy</button>
-  </div>
+<div class="circles">
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="c4"></div>
+    <div class="c5"></div>
+</div>
 
-  <div class="box">
-    <h2>Premium</h2>
-    <h3>800$</h3>
-    <p>The premium vest has all the feature</p>
-    <ul>
-      <li>Slouching detection</li>
-      <li>better equalization of temperature</li>
-      <li>All round sensors</li>
-    </ul>
-    <button type="button">Buy</button>
-  </div>
+<h1>Pricing</h1>
 
-  <!-- Background Circles -->
-  <div class="circle" style="left:50px; bottom:670px; height: 450px; width: 450px;"></div>
-  <div class="circle" style="left:50px; top:300px; height: 80px; width: 80px;"></div>
-  <div class="circle" style="left:200px; top:450px; height: 120px; width: 120px;"></div>
-  <div class="circle" style="left:30px; top:650px; height: 80px; width: 80px;"></div>
-  <div class="circle" style="left:1260px; top:100px; height: 350px; width: 350px;"></div>
-  <div class="circle" style="left:1100px; top:500px; height: 190px; width: 190px;"></div>
+<div class="pricing-container">
+
+    <div class="card">
+        <h2>Standard</h2>
+        <div class="price">300$</div>
+        <p class="desc">This is the most affordable option while still having the important feature.</p>
+        <ul>
+            <li>Heating and cooling</li>
+            <li>Heart rate tracker</li>
+            <li>Body heat sensors</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Premium</h2>
+        <div class="price">800$</div>
+        <p class="desc">The premium vest has all the feature</p>
+        <ul>
+            <li>Slouching detection</li>
+            <li>Better equalization of temperature</li>
+            <li>All round sensors</li>
+        </ul>
+    </div>
+
+</div>
+
 </body>
 </html>

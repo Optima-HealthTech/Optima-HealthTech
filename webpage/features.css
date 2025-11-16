@@ -12,11 +12,53 @@ body {
 
 @keyframes fadeInBody {
   from {
-    opacity: 0:
+    opacity: 0;
   }
   to {
     opacity: 1;
   }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.logo-top-left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: -30px;
+
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar nav ul li {
+  margin-left: 30px;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 3px;
+  transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+  color: rgb(180, 180, 180);
 }
 
 .container {
@@ -66,7 +108,6 @@ body {
   }
 }
 
-
 .left h1 {
   font-size: 85px;
   font-weight: 900;
@@ -97,7 +138,6 @@ body {
   margin-bottom: 35px;
 }
 
-
 .vest {
   width: 340px;
   border-radius: 10px;
@@ -124,7 +164,6 @@ body {
   margin-top: 0;
   animation: fadeRight 1.5s ease-in-out;
 }
-
 
 @keyframes fadeRight {
   from {
@@ -159,7 +198,6 @@ body {
   animation: float 6s ease-in-out infinite alternate,
     rotateSlow 20s linear infinite;
 }
-
 
 @keyframes float {
   from {
@@ -219,6 +257,24 @@ body {
   animation: fadeText 2.5s ease-in-out;
 }
 
+@keyframes drift {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(30px, 20px);
+  }
+  50% {
+    transform: translate(-20px, 40px);
+  }
+  75% {
+    transform: translate(10px, -30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 .circle {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
@@ -242,24 +298,36 @@ body {
 .circle-1 {
   top: 3%;
   left: 8%;
+
+  animation: drift 5s linear infinite alternate-reverse;
 }
 .circle-2 {
   top: 45%;
   left: -5%;
+
+  animation: drift 11s linear infinite alternate;
 }
 .circle-3 {
   bottom: -5%;
   left: 5%;
+
+  animation: drift 13s linear infinite alternate-reverse;
 }
 .circle-4 {
   top: 8%;
   right: 18%;
+
+  animation: drift 7s linear infinite alternate;
 }
 .circle-5 {
   top: 55%;
   right: 8%;
+
+  animation: drift 12s linear infinite alternate-reverse;
 }
 .circle-6 {
   bottom: -5%;
   right: -2%;
+
+  animation: drift 15s linear infinite alternate;
 }

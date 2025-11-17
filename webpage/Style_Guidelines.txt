@@ -6,4 +6,4 @@ Typography: Arial (sans-serif)
 
 Button Style: small, rounded, white buttons.
 
-General style: small white circle around.
+General style: small white circles around.

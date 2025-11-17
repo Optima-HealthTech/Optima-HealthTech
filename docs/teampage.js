@@ -11,3 +11,4 @@ photos.forEach(photo => {
   });
 
 });
+ 
